@@ -1,7 +1,10 @@
-function display(){
-    for (let i =1; i < 10; i++){
-        document.write('<hr style="width: (5*i) %">');
-        document.write("<br/>");
+function Draw(n) {
+    let i = 1;
+    while (i < n) {
+        document.write('<hr width= ' + i + ' %>');
+        i++;
     }
 }
-display();
+
+Draw(prompt("nhập só dòng vào đây", 100));
+
