@@ -1,7 +1,7 @@
 let array = Array();
 let n = +prompt("Bạn muốn mảng có bao nhiêu phần tử ?");
 for (let i = 0; i < n; i++) {
-    array.push(+prompt(" nhập phần tử mảng thứ " + i + " vào đây"));
+    array.push(Math.floor(Math.random()*1000));
 }
 
 function Sum(arr) {

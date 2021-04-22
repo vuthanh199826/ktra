@@ -1,18 +1,19 @@
-function Check(number) {
+let a = +prompt("nhập số cần kiểm tra vào đây");
+function checkPerfectNumber(number){
     let sum = 0;
-    for (let i = 1; i < number; i++) {
-        if (number % i === 0) {
-            sum += i;
+    if(number<=0){
+        return false;
+    }else {
+        for(let i = 0; i < number; i++){
+            if(number%i===0){
+                sum += i;
+            }
         }
-    }
-
-    if (sum === number) {
-        return true;
-    } else {
+        if(sum===number){
+            return true;
+        }
         return false;
     }
-    ;
 
-};
-alert(Check(+prompt("nhập số cần kiểm tra vào đây")));
-
+}
+alert(checkPerfectNumber(a));
